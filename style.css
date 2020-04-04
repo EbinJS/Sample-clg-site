@@ -1,0 +1,460 @@
+@import (https://fonts.googleapis.com/css?family=Alegreya);
+body{
+    font-family: 'Alegreya';
+    color: white;
+}
+body::after{
+    background: linear-gradient(45deg, #000000 90%, #008cff 10%);
+    content: "";
+    opacity: 0.90;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+}
+#title{
+    background: linear-gradient(
+      115deg,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7));
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+#flex{
+    display: flex;
+    padding-top: 15px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#logo{
+    width: 110px;
+    height: 115px;
+    margin-right: 15px;
+}
+#menu{
+    width: 34%;
+    margin-right: 4%;
+    font-size: 25px;
+    background: linear-gradient(
+      115deg,
+      rgba(255, 255, 255,0.2),
+      rgba(255, 255, 255,0.2));
+    border-radius: 5px;
+}
+#menu ul{
+    list-style: none;
+}
+#menu li{
+    padding-top: 45px;
+}
+#cont{
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    text-align: justify;
+    margin-left: auto;
+    margin-right:3%;
+    line-height: 2.2em;
+}
+#cont a{
+    color:rgb(3, 159, 250);
+    cursor: pointer;
+    text-decoration: none; 
+}
+h3{
+    text-align: center;
+}
+#menu a{
+    color:white;
+    cursor: pointer;
+    text-decoration: none;
+}
+#menu a:hover{
+    font-size: 30px;
+    font-weight: bolder;
+    color:rgb(3, 131, 250);
+}
+#current{
+    font-size: 30px;
+    font-weight: bolder;
+    color:rgb(3, 131, 250);
+}
+footer{
+    margin-top: 15px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(
+        115deg,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7));
+    border-radius: 5px;
+}
+#foot{
+    color:rgb(3, 131, 250); 
+    display: flex;
+    justify-content: space-around;
+    width: 38%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#devel{
+    display: flex;
+}
+#foot #code{
+    font-size: 22px;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-right: 6px;
+}
+#footmail{
+    display: flex;
+}
+#foot #fmail{
+    font-size: 17px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 6px;
+}
+#im{
+    text-align: center;
+}
+#im img{
+    width: 160px;
+    height: 180px;
+    border: 6px solid #fffefe;
+    box-shadow: 0 0 10px 5px rgba(68, 68, 68, 0.856);
+}
+#pro ul{
+    list-style: circle;
+    color:white;
+}
+#vm{
+    display: flex;  
+    justify-content: space-around;
+}
+#v,#m{
+    width: 40%;
+    text-align: justify;
+    padding: 10px 30px 20px 30px;;
+    background: linear-gradient(
+        115deg,
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.2));
+    border-radius: 25%;
+}
+#v:hover,#m:hover{
+    color: black;
+    background: linear-gradient(
+        45deg,
+        rgba(3, 131, 250, 0.85),
+        rgba(2, 133, 255, 0.85));
+}
+#v p,#m p{
+    font-size: 14px;
+}
+#v h4,#m h4{
+    text-align: center;
+}
+table{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    background: linear-gradient(
+      115deg,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1));
+}
+th{
+    color: ghostwhite;
+    width: 50%;
+}
+table,th,td{
+    border: 4px solid white;
+    text-align: center;
+}
+#row1{
+    background-color:rgb(3, 131, 250);
+}
+#cous{
+    justify-content: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    font-size: 18px;
+}
+#i1,#i2,#i3{
+    font-size: 18px;
+    color: white;
+    margin-right: 7px;
+}
+#i1{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#i2{
+    margin-top: 10px;
+}
+#i3{
+    margin-top: 10px;
+}
+#phone,#loc,#mail{
+    display: flex;
+    color:rgb(3, 131, 250);
+}
+#one,#two,#three{
+    margin-left: 20px;
+}
+#cous a{
+    color:white;
+    cursor: pointer;
+    text-decoration: none;
+}
+#cous a:hover{
+    color: rgb(151, 148, 148);
+}
+.gallery 
+{
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 100px;
+    grid-auto-flow: dense;
+    height: 500px;
+    overflow-y: scroll;
+} 
+.gallery div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery div img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .6ex;
+}
+.normal{
+    grid-column: span 1;
+    grid-row: span 2;
+}
+.mid{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.long
+{
+    grid-row: span 4;
+}
+.large{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.big{
+    grid-column: span 2;
+    grid-row: span 3;
+}
+@media (max-width:540px){
+    #title{
+        margin-left: 4%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    #flex{
+        padding-top: 10px;
+    }
+    #title h1{
+        font-size: 22px;
+    }
+    #title h2{
+        font-size: 18px;
+    }
+    #logo{
+        width: 75px;
+        height: 80px;
+        margin-right: 5px;
+    }
+    #menu{
+        width: 50%;
+        font-size: 14px;
+    }
+    #menu ul{
+        padding-left: 12px;
+    }
+    #menu li{
+        padding-top: 25px;
+    }
+    #cont{
+        width: 90%;
+        height: 100%;
+        font-size: 12px;
+        line-height: 1.3em;
+        overflow-y: scroll;
+    }
+    h3{
+        font-size: 15px;
+        text-align: center;
+    }
+    #menu a:hover{
+        font-size: 14px;
+        font-weight: normal;
+    }
+    #current{
+        font-size: 15px;
+        font-weight: bolder;
+        color:rgb(3, 131, 250);
+    }
+    #foot{
+        width: 100%;
+    }
+    #foot h5{
+        font-size: 7px;
+    }
+    #foot #code{
+        font-size: 17px;
+        margin-right: 3px;
+    }
+    #foot #fmail{
+        font-size: 12px;
+        margin-right: 3px;
+    }
+    #im img{
+        width: 90px;
+        height: 110px;
+        border: 4px solid #fffefe;
+        box-shadow: 0 0 10px 5px rgba(68, 68, 68, 0.856);
+    }
+    #v,#m{
+        width: 50%;
+        padding: 5px 10px 5px 10px;;
+    }
+    #v p,#m p{
+        font-size:8px;
+    }
+    #v h4,#m h4{
+        text-align: center;
+    }
+    table{
+        width: 75%;
+        height: 80%;
+    }
+    #cous{
+        width:90%;
+        font-size: 9px;
+        line-height: 1.3rem;
+    }
+    #i1,#i2,#i3{
+        font-size: 12px;
+        color: white;
+        margin-right: 7px;
+    }
+    #i1{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    #i2{
+        margin-top: 0px;
+    }
+    #i3{
+        margin-top: 0px;
+    }
+    #phone,#loc,#mail{
+        display: flex;
+        color:rgb(3, 131, 250);
+    }
+    #one,#two,#three{
+        margin-left: 10px;
+    }
+    #loc{
+        line-height: 1rem;
+    }
+    .gallery 
+    {
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+        grid-auto-rows: 50px;
+        height: 500px;
+        overflow-y: scroll;
+    }
+}
+@media (max-width:442px){
+    #title h1{
+        font-size: 20px;
+    }
+    #title h2{
+        font-size: 16px;
+    }
+    #menu{
+        font-size: 12px;
+    }
+    #current{
+        font-size: 13px;
+    }
+    #cont{
+        font-size: 10px;
+        line-height: 1.3em;    }
+    h3{
+        font-size: 12px;
+    }
+    #v p,#m p{
+        font-size: 8px;
+    }
+    #im img{
+        width: 75px;
+        height: 95px;
+        border: 3px solid #fffefe;
+        box-shadow: 0 0 10px 5px rgba(68, 68, 68, 0.856);
+    }
+    #one,#two,#three{
+        margin-left: 10px;
+    }
+}
+@media (max-width:406px){
+    #title h1{
+        font-size: 17px;
+    }
+    #title h2{
+        font-size: 14px;
+    }
+    #menu{
+        font-size: 11px;
+    }
+    #current{
+        font-size: 12px;
+    }
+    #cont{
+        font-size: 9px;
+        line-height: 1.2em;
+    }
+    h3{
+        font-size: 11px;
+    }
+    #v p,#m p{
+        font-size: 7px;
+    }
+    #im img{
+        width: 70px;
+        height: 90px;
+        border: 3px solid #fffefe;
+        box-shadow: 0 0 10px 5px rgba(68, 68, 68, 0.856);
+    }
+    #cous{
+        width: 100%;
+        font-size: 8px;
+    }
+}
+  
